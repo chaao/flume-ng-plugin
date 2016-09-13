@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+	<id>dist</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>true</includeBaseDirectory>
+	<dependencySets>
+		<dependencySet>
+			<outputDirectory>lib</outputDirectory>
+			<includes>
+				<include>com.inveno.flumeng:hdfs-source</include>
+				<include>org.apache.hadoop:hadoop-common</include>
+				<include>org.apache.hadoop:hadoop-annotations</include>
+				<include>org.apache.commons:commons-math3</include>
+				<include>xmlenc:xmlenc</include>
+				<include>commons-net:commons-net</include>
+				<include>com.sun.jersey:jersey-core</include>
+				<include>com.sun.jersey:jersey-json</include>
+				<include>org.codehaus.jettison:jettison</include>
+				<include>com.sun.xml.bind:jaxb-impl</include>
+				<include>javax.xml.bind:jaxb-api</include>
+				<include>javax.xml.stream:stax-api</include>
+				<include>javax.activation:activation</include>
+				<include>com.sun.jersey:jersey-server</include>
+				<include>asm:asm</include>
+				<include>tomcat:jasper-compiler</include>
+				<include>tomcat:jasper-runtime</include>
+				<include>javax.servlet.jsp:jsp-api</include>
+				<include>commons-el:commons-el</include>
+				<include>net.java.dev.jets3t:jets3t</include>
+				<include>com.jamesmurty.utils:java-xmlbuilder</include>
+				<include>commons-configuration:commons-configuration</include>
+				<include>commons-digester:commons-digester</include>
+				<include>commons-beanutils:commons-beanutils</include>
+				<include>commons-beanutils:commons-beanutils-core</include>
+				<include>org.apache.hadoop:hadoop-auth</include>
+				<include>org.apache.directory.server:apacheds-kerberos-codec</include>
+				<include>org.apache.directory.server:apacheds-i18n</include>
+				<include>org.apache.directory.api:api-asn1-api</include>
+				<include>org.apache.directory.api:api-util</include>
+				<include>com.jcraft:jsch</include>
+				<include>org.htrace:htrace-core</include>
+				<include>org.apache.zookeeper:zookeeper</include>
+				<include>org.tukaani:xz</include>
+				<include>org.apache.hadoop:hadoop-hdfs</include>
+				<include>commons-daemon:commons-daemon</include>
+				<include>xerces:xercesImpl</include>
+			</includes>
+		</dependencySet>
+	</dependencySets>
+</assembly>
